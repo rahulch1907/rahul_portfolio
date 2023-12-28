@@ -3,16 +3,14 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" }); 
   return (
     <section
       className={`relative w-full mx-auto h-screen `}
     >
       <div
-        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:top-[120px]`}
+        className={`absolute inset-0 top-[100px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:top-[120px]`}
       >
         <div className="flex flex-col items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -30,7 +28,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {!isMobile && <ComputersCanvas />}
+      <ComputersCanvas />
 
       <div className="absolute flex items-center justify-center w-full xs:bottom-10 bottom-32">
         <a href="#about">
