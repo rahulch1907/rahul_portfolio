@@ -17,7 +17,7 @@ import kkrschool from "./kkrschool.webp";
 import srichaitanya from "./srichaitanya.jpeg";
 import credly from "./credly.svg";
 import clusterskills from "./clusterskills.png";
-import protasker from "./protasker.png";
+import protasker from "./ProTasker.png";
 import portfolio from "./portfolio.png";
 
 import css from "./tech/css.png";
