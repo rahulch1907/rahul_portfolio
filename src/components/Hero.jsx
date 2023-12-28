@@ -3,16 +3,18 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" }); 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[300px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:top-[120px]`}
       >
         <div className="flex flex-col items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 h-40 sm:h-80 violet-gradient" />
+          <div className="w-1 h-80 sm:h-80 violet-gradient" />
         </div>
 
         <div>
@@ -20,13 +22,13 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Rahul</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Full Stack Developer || AWS || AI Enthusiast{" "}
+            Full Stack Developer || AWS || AI Enthusiast
             <br className="hidden sm:block" />
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {!isMobile && <ComputersCanvas />}
 
       <div className="absolute flex items-center justify-center w-full xs:bottom-10 bottom-32">
         <a href="#about">
