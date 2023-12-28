@@ -8,7 +8,9 @@ import { useMediaQuery } from "react-responsive";
 const Hero = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" }); 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section
+      className={`relative w-full mx-auto h-screen `}
+    >
       <div
         className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:top-[120px]`}
       >
