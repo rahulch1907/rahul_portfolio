@@ -10,11 +10,11 @@ const Hero = () => {
       className={`relative w-full mx-auto h-screen `}
     >
       <div
-        className={`absolute inset-0 top-[100px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:top-[120px]`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 h-80 sm:h-80 violet-gradient" />
+          <div className="w-1 h-60 sm:h-80 violet-gradient" />
         </div>
 
         <div>
