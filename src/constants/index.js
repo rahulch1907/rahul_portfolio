@@ -12,7 +12,6 @@ import {
   coding,
   backend1,
   frontend,
-  nextjs,
   java1,
   python,
   iiitdharwad,
@@ -21,6 +20,7 @@ import {
   protasker,
   clusterskills,
   portfolio,
+  nextjs1,
 } from "../assets";
 
 export const navLinks = [
@@ -112,7 +112,7 @@ const technologies = [
   },
   {
     name: "Nextjs",
-    icon: nextjs,
+    icon: nextjs1,
   },
 ];
 
