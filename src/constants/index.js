@@ -10,7 +10,7 @@ import {
   git,
   aws,
   coding,
-  backend1,
+ // backend1,
   frontend,
   java1,
   python,
@@ -51,10 +51,10 @@ const services = [
     title: "Front-end Developer",
     icon: frontend,
   },
-  {
-    title: "Backend Developer",
-    icon: backend1,
-  },
+ // {
+ //   title: "Backend Developer",
+ //   icon: backend1,
+ // },
   {
     title: "AWS Cloud Developer",
     icon: aws,
